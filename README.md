@@ -82,6 +82,70 @@ The pipeline automatically builds and pushes a Docker image to DockerHub wheneve
   - Built Docker image
   - Logged into DockerHub
   - Pushed Docker image
+ 
+## ✅ Final Result
+- CI/CD pipeline working successfully.
+- Docker image automatically pushed on every code change.
+- Full automation implemented.
+                                                                  **code use in this project **
+
+   
+**NODE.JS COMMANDS**
+
+npm init -y
+npm install express
+npm install
+node index.js
+
+
+**GIT COMMANDS**
+
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <repository-url>
+git push -u origin main
+git push
+git push --force
+git pull origin main --allow-unrelated-histories
+
+
+
+**DOCKER COMMANDS**
+
+docker build -t nodejs-cicd-demo .
+docker images
+docker run -p 3000:3000 nodejs-cicd-demo
+docker run -d -p 3000:3000 nodejs-cicd-demo
+docker run -d -p 3000:3000 --restart always nodejs-cicd-demo
+docker ps
+docker ps -a
+docker stop <container-id>
+docker rm <container-id>
+docker rmi <image-id>
+
+
+**LINUX / EC2 COMMANDS**
+
+sudo apt update
+sudo apt install nodejs -y
+sudo apt install npm -y
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker ubuntu
+mkdir -p .github/workflows
+nano filename
+ls
+ls -R
+pwd
+curl localhost:3000
+
+
+**GITHUB ACTIONS TRIGGER**
+
+git push
 
 ---
 
